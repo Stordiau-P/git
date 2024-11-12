@@ -1,7 +1,212 @@
-body{
-    background-color: black;
+/* General Styling */
+@font-face {
+    font-family: 'Clemente-bold';
+    src: url(Fonts/Fonts/clementepdam-bold.ttf);
 }
-header{
-    background-image: url(images/bg.jpg);
-    background-repeat: no-repeat;
+@font-face {
+    font-family: 'Clemente';
+    src: url(Fonts/Fonts/clementepdag-book.ttf);
+}
+@font-face {
+    font-family: 'artic';
+    src: url(Fonts/Fonts/arctik\ 2.ttf);
+}
+body {
+    margin: 0;
+    background-color: #1e1f23;
+    color: white;
+}
+
+/* Hero Section */
+header.hero {
+    background: url('images/bg.jpg') no-repeat; 
+    background-size: cover; 
+    background-position: center 50%; 
+    height: 420px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+header h1 {
+    font-size: 48px;
+    color: #ffffff;
+    margin-top: 2.3em;
+    margin-bottom: 0;
+    font-family: Clemente-bold;
+}
+
+header p {
+    font-size: 16px;
+    color: #cccccc;
+    margin-top: 0;
+    font-family: Clemente;
+}
+
+
+/* Main Content */
+.content {
+    margin: -160px auto 0;
+    width: 90%;
+    max-width: 85em;
+    background-color: #ffffff;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Clemente-bold;
+}
+
+/* Image Section */
+.intro-section img {
+    width: 100%;
+    display: block;
+}
+
+.title-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    color: black;
+    height: 9em;
+    
+}
+
+.title-box h2 {
+    font-size: 24px;
+    margin: 0 0 10px; 
+}
+
+.title-box .line {
+    width: 6em;
+    height: 1px;
+    background: rgba(190,190,190,255);
+    margin: 10px 0; 
+}
+
+.title-box p {
+    font-size: 14px;
+    margin: 10px 0 0; 
+    color: rgba(190,190,190,255);
+    font-family: artic;
+    letter-spacing: 2px;
+    
+}
+
+/* Text Section */
+.text-section {
+    background-color: #f4f4f4;
+    padding: 4.5em;
+    color: #333333;
+    line-height: 1.5;
+    font-size: 15px;
+    width: 100%;
+    font-family: Arial;
+    font-weight: 100;
+    font-family: Clemente;
+}
+
+/* Gallery Section */
+.gallery-section {
+    background-color: #1e1f23;
+}
+.inside-box{
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.text-in-grid{
+    background-color: #121315;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+.gallery-section .line {
+    width: 6em;
+    height: 1px;
+    background: #2c2d2e;
+    margin: 10px 0;
+}
+
+.gallery-section h2 {
+    color: white;
+    font-family: Clemente-bold;
+}
+
+.gallery-section p {
+    color: #2c2d2e;
+    font-family: artic;
+    letter-spacing: 2px;
+}
+
+.gallery {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; 
+}
+
+/* Split Section */
+.split-section {
+    display: flex;
+    background-color: #f4f4f4;
+    color: #1e1f23;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.split-section.reverse {
+    flex-direction: row-reverse;
+    background-color: #1e1f23;
+    
+    
+}
+
+.split-section img {
+    width: 50%;
+}
+
+.split-section .text-content {
+    padding: 5em;
+    text-align: justify;
+    line-height: 1.7;
+    font-family: Clemente;
+}
+.align-right{
+    text-align: end;
+}
+.grey{
+    color: #56575a;
+}
+.white{
+    color: white;
+}
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+
+    color: #aaaaaa;
+}
+footer img{
+    max-width: 30px;
+    filter: invert(78%) sepia(3%) saturate(0%) hue-rotate(187deg) brightness(90%) contrast(89%);
+    margin: 1.5em 0.5em;
+    margin-top: 2.5em;
+}
+.underline{
+    text-decoration: underline;
+    font-family: sans-serif;
+    font-weight: 100;
 }
